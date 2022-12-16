@@ -15,4 +15,14 @@ class Transaction extends Model
         'amount',
      ];
 
+     public function walletTransmiter()
+    {
+        return $this->belongsTo(Wallet::class,'wallet_id_transmitter');
+    }
+    public function walletReciver()
+    {
+        return $this->belongsTo(Wallet::class,'wallet_reciver_id');
+    }
+
+
 }

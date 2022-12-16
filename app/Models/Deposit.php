@@ -15,8 +15,8 @@ class Deposit extends Model
 
 
    
-    public function wallets ()
+    public function wallet()
     {
-        return $this->hasMany(Wallet::class);
+        return $this->belongsTo(Wallet::class);
     }
 }

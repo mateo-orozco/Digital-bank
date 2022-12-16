@@ -19,7 +19,7 @@ class WalletFactory extends Factory
     {
         return [
             'user_id'=>User::factory()->create()->id, 
-            'savings'=>fake()->float()
+            'savings'=>fake()->randomFloat(2,1,100)
         ];
     }
 }

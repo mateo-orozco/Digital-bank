@@ -29,8 +29,6 @@ class WalletController extends Controller
     'user_id'=>$request->user_id
    ]);
          
-         
-         
-         
+   return $wallets;
     }
 }

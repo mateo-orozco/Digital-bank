@@ -19,7 +19,7 @@ class TransactionFactory extends Factory
     {
         return [
             'wallet_id_transmitter'->Wallet::all(),
-            'wallets_receiver_id'->foreignID(),
+            'wallet_receiver_id'->foreignID(),
             'amount'->float()
         ];
     }

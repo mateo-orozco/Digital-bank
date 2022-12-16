@@ -10,11 +10,9 @@ class Transaction extends Model
     use HasFactory;
     
     protected $fillable = [
-        'wallets_transmitter_id',
-        'wallets_receiver_id',
+        'wallet_id_transmitter',
+        'wallet_reciver_id',
         'amount',
-
-        
      ];
 
 }
